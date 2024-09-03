@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fans to-do List</title>
+    <link rel="stylesheet" href="./allReset.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <Script src="./index.js" defer></Script>
 </head>
 <body>
-    <div class="mainBox">
-        
+    <div id="bannerArea">
+        <img src="./img/banner.jpeg">
     </div>
-
+    <div id="belowArea">
+        <div class="title">
+            <h3>FAN</h3>
+        </div>
+        <div class="mainBox">
+            <div class="wrap">
+                <form class="formWrap" id="formWrap">
+                    <input type="text" id="formInput">
+                    <button id="add">加入清單</button>
+                </form>
+                <ul class="listItem" id="listItem">
+                    <!-- <li class="checked">吃便當 <span class="delete"></span></li> -->
+                    <!-- <li>吃便當 <span class="delete"></span></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
