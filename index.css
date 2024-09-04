@@ -29,6 +29,9 @@ body {
   margin-left: 50px;
   width: 90%;
 }
+#belowArea .mainBox h3 {
+  font-size: 50px;
+}
 #belowArea .mainBox input {
   background-color: #cfded9;
   border: 0px;
@@ -74,6 +77,7 @@ body {
   cursor: pointer;
 }
 #add:hover {
+  transition: 0.3s;
   background-color: green;
 }
 

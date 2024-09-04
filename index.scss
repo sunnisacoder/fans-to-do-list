@@ -26,6 +26,9 @@ body {
         margin-top: 50px;
         margin-left: 50px;
         width: 90%;
+        h3{
+            font-size: 50px;
+        }
         input{
             background-color: #cfded9;
             border:0px;
@@ -73,6 +76,7 @@ body {
     color: white;
     cursor: pointer;
     &:hover {
+        transition: 0.3s;
         background-color: green;
     }
 }
