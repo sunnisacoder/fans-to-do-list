@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <Script src="./index.js" defer></Script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-date-picker/3.2.0/tiny-date-picker.css">
+    <script src="./index.js" defer></script>
 </head>
+
 <body>
     <div id="bannerArea">
         <img src="./img/banner.jpeg">
     </div>
     <div id="belowArea">
         <div class="title">
-            <h3>FAN</h3>
+            <h3>fan</h3>
         </div>
         <div class="mainBox">
             <div class="wrap">
                 <form class="formWrap" id="formWrap">
-                    <h3>To do List</h3>
+                    <h3>to do List</h3>
                     <input type="text" id="formInput">
                     <button id="add">加入清單</button>
                 </form>
@@ -32,6 +35,15 @@
                 </ul>
             </div>
         </div>
+        <div class="calenderBox">
+            <div class="wrap">
+                <h3>Calendar</h3>
+                <!-- <input class="date-picker"> -->
+                <div class="permanent-cal-container"></div>
+            </div>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-date-picker/3.2.0/tiny-date-picker.js" integrity="sha512-gRRcNG+vqS6h+qQ8NQ9lEuCENivafF1nvVv+J1UiJYvV6URqITyh5MpCjwOg1FumcfPlfl6KqVsAvTE9BbHegw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

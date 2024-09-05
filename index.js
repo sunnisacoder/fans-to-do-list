@@ -114,4 +114,12 @@ initList();
 // 防止瀏覽器刷新
 // 開始建立第一個function Name(){要做的事情} -> 先log看看
 
-
+//calender
+document.addEventListener('DOMContentLoaded', function () {
+    // TinyDatePicker('.date-picker');
+    // console.log("tt"); 
+    var dpPermanent = TinyDatePicker('.permanent-cal-container', {
+        mode: 'dp-permanent',
+    });
+});
+//calender

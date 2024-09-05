@@ -16,18 +16,19 @@ body {
 #belowArea {
   display: flex;
   width: 100%;
-  height: 50vh;
 }
 #belowArea .title {
   color: #1e1e1e;
   font-size: 400px;
   display: flex;
   align-items: center;
+  margin-right: 50px;
 }
 #belowArea .mainBox {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
-  margin-left: 50px;
-  width: 90%;
+  width: 33.3333333333%;
 }
 #belowArea .mainBox h3 {
   font-size: 50px;
@@ -67,6 +68,12 @@ body {
   background-image: url("./img/checked.svg");
 }
 
+@media (max-width: 1200px) {
+  #belowArea {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 #add {
   padding: 10px 30px;
   margin-left: 10px;
@@ -94,4 +101,14 @@ body {
 .delete:hover {
   transition: 0.5s;
   filter: contrast(0%);
+}
+
+.calenderBox {
+  display: flex;
+  justify-content: center;
+  width: 33.3333333333%;
+  margin-top: 50px;
+}
+.calenderBox h3 {
+  font-size: 50px;
 }/*# sourceMappingURL=index.css.map */
