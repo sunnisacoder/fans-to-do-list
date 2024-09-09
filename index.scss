@@ -37,6 +37,7 @@ body {
             border-radius: 30px;
             outline: none;
             padding: 10px 20px;
+            margin-right: 10px;
         }
         .listItem {
             // border: 1px solid black;
@@ -69,16 +70,16 @@ body {
     }
 }
 // 1200px
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     #belowArea {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
+
 #add {
     padding: 10px 30px;
-    margin-left: 10px;
     border-radius: 30px;
     border: none;
     background-color: #1e1e1e;
@@ -87,6 +88,11 @@ body {
     &:hover {
         transition: 0.3s;
         background-color: green;
+    }
+}
+@media (max-width: 954px) {
+    #add {
+        margin-top: 10px;
     }
 }
 
