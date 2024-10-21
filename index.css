@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 20px;
   font-family: "Bebas Neue", sans-serif;
@@ -10,6 +11,7 @@ body {
   height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 50px;
   filter: contrast(50%) brightness(50%);
 }
 
@@ -21,14 +23,11 @@ body {
   color: #1e1e1e;
   font-size: 400px;
   display: flex;
-  align-items: center;
-  margin-right: 50px;
+  justify-content: center;
 }
 #belowArea .mainBox {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  width: 33.3333333333%;
 }
 #belowArea .mainBox h3 {
   font-size: 50px;
@@ -69,12 +68,6 @@ body {
   background-image: url("./img/checked.svg");
 }
 
-@media (max-width: 1250px) {
-  #belowArea {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 #add {
   padding: 10px 30px;
   border-radius: 30px;
@@ -88,11 +81,6 @@ body {
   background-color: green;
 }
 
-@media (max-width: 954px) {
-  #add {
-    margin-top: 10px;
-  }
-}
 .delete {
   background-image: url("img/delete.png");
   background-repeat: no-repeat;
@@ -111,9 +99,74 @@ body {
 .calenderBox {
   display: flex;
   justify-content: center;
-  width: 33.3333333333%;
-  margin-top: 50px;
 }
 .calenderBox h3 {
   font-size: 50px;
+}
+
+/* 響應式設計 */
+@media (max-width: 1250px) {
+  .title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .title h3 {
+    font-size: 200px;
+  }
+  .mainBox,
+  .calenderBox {
+    width: 60%;
+  }
+  #add {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 992px) {
+  #belowArea {
+    display: flex;
+    flex-direction: column;
+  }
+  .title h3 {
+    font-size: 180px;
+  }
+  .mainBox,
+  .calenderBox {
+    width: 100%;
+  }
+  .calenderBox {
+    margin-top: 50px;
+  }
+  .mainBox h3,
+  .calenderBox h3 {
+    display: flex;
+    justify-content: center;
+  }
+  #add {
+    margin-top: 10px;
+  }
+  .formWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #formInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .title h3 {
+    font-size: 160px;
+  }
+  .delete {
+    background-size: 25px 25px;
+  }
+}
+@media (max-width: 375px) {
+  .title h3 {
+    font-size: 150px;
+  }
+  #add {
+    padding: 8px 20px;
+  }
 }/*# sourceMappingURL=index.css.map */

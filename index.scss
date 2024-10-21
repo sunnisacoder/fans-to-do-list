@@ -4,30 +4,32 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
 #bannerArea {
     img {
         width: 100%;
         height: 50vh;
         object-fit: cover;
+        margin-bottom: 50px;
         filter: contrast(50%) brightness(50%);
     }
 }
+
 #belowArea {
     display: flex;
     width: 100%;
+
     .title {
         color: #1e1e1e;
         font-size: 400px;
         display: flex;
-        align-items: center;
-        margin-right: 50px;
-        // border: 1px solid black;
+        justify-content: center;
     }
+
     .mainBox {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
-        width: calc(100% / 3);
+
         h3 {
             font-size: 50px;
         }
@@ -39,18 +41,21 @@ body {
             padding: 10px 20px;
             margin-right: 10px;
         }
+
         .listItem {
-            // border: 1px solid black;
             margin-top: 20px;
             position: relative;
+
             li {
                 position: relative;
                 font-size: 20px;
                 margin-bottom: 5px;
             }
+
             li.checked {
                 text-decoration: line-through;
             }
+
             li::before {
                 content: "";
                 display: inline-block;
@@ -63,20 +68,13 @@ body {
                 vertical-align: middle;
                 margin-right: 10px;
             }
+
             li.checked::before {
                 background-image: url("./img/checked.svg");
             }
         }
     }
 }
-// 1200px
-@media (max-width: 1250px) {
-    #belowArea {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 
 #add {
     padding: 10px 30px;
@@ -85,14 +83,10 @@ body {
     background-color: #1e1e1e;
     color: white;
     cursor: pointer;
+
     &:hover {
         transition: 0.3s;
         background-color: green;
-    }
-}
-@media (max-width: 954px) {
-    #add {
-        margin-top: 10px;
     }
 }
 
@@ -106,18 +100,110 @@ body {
     position: absolute;
     margin-top: -5px;
     cursor: pointer;
+
     &:hover {
         transition: 0.5s;
         filter: contrast(0%);
     }
 }
+
 .calenderBox {
     display: flex;
     justify-content: center;
-    width: calc(100% / 3);
-    margin-top: 50px;
+
     h3 {
         font-size: 50px;
     }
 }
 //刪除按鈕
+
+/* 響應式設計 */
+@media (max-width: 1250px) {
+    
+    .title {
+        width: 100%;
+        margin-bottom: 20px;
+
+        h3{
+            font-size: 200px;
+        }
+    }
+
+    .mainBox,
+    .calenderBox {
+        width: 60%;
+    }
+
+    #add{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #belowArea{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        h3{
+            font-size: 180px;
+        }
+    }
+
+    .mainBox,
+    .calenderBox {
+        width: 100%;
+    }
+
+    .calenderBox{
+        margin-top: 50px;
+    }
+
+    .mainBox h3,
+    .calenderBox h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #add {
+        margin-top: 10px;
+    }
+
+    .formWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title {
+        h3{
+            font-size: 160px;
+        }
+    }
+
+    .delete {
+        background-size: 25px 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        h3{
+            font-size: 150px;
+        }
+    }
+
+    #add {
+        padding: 8px 20px;
+    }
+}
